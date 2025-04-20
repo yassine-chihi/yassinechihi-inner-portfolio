@@ -1,10 +1,10 @@
 import React from 'react';
-import me from '../../assets/pictures/workingAtComputer.jpg';
-import meNow from '../../assets/pictures/currentme.jpg';
+import me from '../../assets/pictures/meWithComputer.png';
+import meNow from '../../assets/pictures/me.jpg';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
-export interface AboutProps {}
+export interface AboutProps { }
 
 const About: React.FC<AboutProps> = (props) => {
     return (
@@ -16,9 +16,8 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at Instacodin! In 
-                    October 2024, I graduated as a software engineer from ISSATso 
-                    at the University of Sousse.
+                    I'm a software engineer and cyber-security enthusiast currently working at <i>INSTACODIN</i> ! 
+                    I earned my degree in Software Engineering from ISSATSo, affiliated with the University of Sousse, in October 2024.
                 </p>
                 <br />
                 <p>
@@ -27,8 +26,8 @@ const About: React.FC<AboutProps> = (props) => {
                     building it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:yassinechihi20@gmail.com">
-                        yassinechihi@gmail.com
+                    <a href="mailto:yassine.chihi20@gmail.com">
+                        yassine.chihi20@gmail.com
                     </a>
                 </p>
             </div>
@@ -37,53 +36,46 @@ const About: React.FC<AboutProps> = (props) => {
                 <h3>About Me</h3>
                 <br />
                 <p>
-                    From a young age, I have had a curiosity about how things
-                    worked. This naturally led me to become absolutely obsessed
-                    with Lego and I fell in love with building things. In
-                    elementary school, I joined the Lego Robotics team at my
-                    local middle school, which was my first real exposure to
-                    programming. In 2008, my family and I moved across the
-                    country from California to New York, where I attended middle
-                    school, high school, and college.
+                    From an early age, I've always been drawn to understanding how 
+                    systems work, which naturally led me to tech. Over time, that 
+                    curiosity eventually led me into the world of software. Where logic, 
+                    creativity, and structure all come together.
+                    In university, I joined a cyber-security club where I learned so much 
+                    from many people in this field. It was a hands-on, challenge-driven 
+                    environment that pushed me to think critically about how systems can 
+                    be broken—and more importantly, how they can be secured. That experience 
+                    sharpened my attention to detail and taught me to approach development 
+                    with a security-first mindset.
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <img src={me} style={styles.image} alt="" />
+                    <img src={me} style={styles.kidImage} alt="" />
                     <p>
                         <sub>
-                            <b>Figure 1:</b> A real photo of me developing this
+                            <b>Figure 1:</b> A photo of me developing this
                             website :)
                         </sub>
                     </p>
                 </div>
 
                 <p>
-                    I started programming more seriously in high school,
-                    initially learning how to scrape and interact with websites.
-                    I went on to do a ton of passion projects, many of them with
-                    one of my closest friends,{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/scott-bass-189a7919b/"
-                    >
-                        Scott Bass
-                    </a>
-                    . We worked on many projects together, including chat bots,
-                    multiple game projects, apps, and more. One of these
-                    projects is viewable on my{' '}
-                    <Link to="/projects/software">Software Projects</Link> page.
+                    I started taking programming more seriously in university, 
+                    beginning with the basics—learning how to code and interact 
+                    with websites and low level languages like C. From there, 
+                    I got hooked and started building and breaking all kinds of small 
+                    personal projects: chatbots, games, apps, and whatever else sparked my interest at the time. It was all 
+                    about experimenting and having fun while learning.
                 </p>
                 <br />
                 <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
+                    In 2019, I got accepted into Higher Institute of Applied Sciences and Technology
+                    in Sousse, to study Software Engineering. It was my first choice
                     and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
+                    university. At my final year, I got an internship working for EY Tunisia, as cybersecurity 
+                    software engineer, where I was able to apply my knowledge and skills in a real-world setting,
+                    by building a real-time Security Orchestration, Automation, and Response (SOAR) platform.
+                    You can check out the project on my  {' '}
+                    <Link to="/projects/software">Software Projects</Link> page.
                 </p>
                 <br />
                 <br />
@@ -102,13 +94,14 @@ const About: React.FC<AboutProps> = (props) => {
                             Beyond software, I have a lot of hobbies that I
                             enjoy doing in my free time. The more tangible
                             hobbies I have are{' '}
-                            <Link to="/projects/music">Music Production</Link>{' '}
-                            and creating{' '}
-                            <Link to="/projects/art">Digital Art</Link>. You can
+                            <Link to="/projects/ctfs">Playing CTFs</Link>{' '}
+                            and {' '}
+                            <Link to="/projects/"></Link>. You can
                             read more about each of these on their respective
                             pages under my projects tab. Some other hobbies I
-                            enjoy are working out, cooking, and (unsurprisingly)
+                            enjoy are tennis, gym, cooking and (unsurprisingly)
                             playing video games.
+                            
                         </p>
                         <br />
                         <p>
@@ -166,6 +159,11 @@ const styles: StyleSheetCSS = {
     image: {
         height: 'auto',
         width: '100%',
+    },
+    kidImage : {
+        paddingTop: 10,
+        height: 'auto',
+        width: 'auto',
     },
     topImage: {
         height: 'auto',
