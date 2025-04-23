@@ -1,6 +1,6 @@
 import React from 'react';
 import me from '../../assets/pictures/meWithComputer.png';
-import meNow from '../../assets/pictures/me.jpg';
+import meNow from '../../assets/pictures/me_25.png';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
@@ -70,7 +70,7 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     In 2019, I got accepted into Higher Institute of Applied Sciences and Technology
                     in Sousse, to study Software Engineering. It was my first choice
-                    and I was absolutely ecstatic to be going to such a great
+                    and I was absolutely thrilled to be going to such a great
                     university. At my final year, I got an internship working for EY Tunisia, as cybersecurity 
                     software engineer, where I was able to apply my knowledge and skills in a real-world setting,
                     by building a real-time Security Orchestration, Automation, and Response (SOAR) platform.
@@ -92,47 +92,44 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <p>
                             Beyond software, I have a lot of hobbies that I
-                            enjoy doing in my free time. The more tangible
-                            hobbies I have are{' '}
-                            <Link to="/projects/ctfs">Playing CTFs</Link>{' '}
-                            and {' '}
-                            <Link to="/projects/"></Link>. You can
-                            read more about each of these on their respective
-                            pages under my projects tab. Some other hobbies I
+                            enjoy doing in my free time. The most tangible
+                            hobbie I have is{' '}
+                            <Link to="/projects/ctfs">Playing CTFs</Link>{' '}.
+                            You can read more about it on it's respective
+                            page under my projects tab. Some other hobbies I
                             enjoy are tennis, gym, cooking and (unsurprisingly)
                             playing video games.
                             
                         </p>
                         <br />
                         <p>
-                            In college, I was an active member in the fraternity
-                            Sigma Alpha Epsilon and held multiple positions in
-                            the chapter. I met a lot of amazing people through
-                            my fraternity and thoroughly enjoyed the community.
+                            College was a really fun and meaningful time for me. 
+                            I learned a lot of useful things and grew a lot as a person. 
+                            I also met some great people along the way who made those years even better.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
                         <img src={meNow} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 2:</b> Me, April 2025
+                                <b>Figure 2:</b> Me, April 2023
                             </sub>
                         </p>
                     </div>
                 </div>
                 <br />
                 <br />
-                <p>
+                <p style={styles.footer}>
                     Thanks for reading about me! I hope that you enjoy exploring
                     the rest of my portfolio website and everything it has to
                     offer. If you find the easter egg make sure to let me know
-                    on twitter{' '}
+                    on Linkedin{' '}
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://www.linkedin.com/in/yassine-chihi-b440a31a1/"
                     >
-                        @henryheffernan
+                        yassine-chihi
                     </a>{' '}
                     Good luck and have fun!
                 </p>
@@ -142,8 +139,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:yassine.chihi20@gmail.com">
+                        yassine.chihi20@gmail.com
                     </a>
                 </p>
             </div>
@@ -157,13 +154,14 @@ const styles: StyleSheetCSS = {
         fontSize: 48,
     },
     image: {
+        marginTop: 20,
         height: 'auto',
         width: '100%',
     },
     kidImage : {
         paddingTop: 10,
-        height: 'auto',
-        width: 'auto',
+        height: '90%',
+        width: '90%',
     },
     topImage: {
         height: 'auto',
@@ -181,6 +179,9 @@ const styles: StyleSheetCSS = {
         textAlign: 'center',
         flexDirection: 'column',
     },
+    footer: {
+        marginTop: 30
+    }
 };
 
 export default About;
