@@ -5,7 +5,7 @@ import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
 
-export interface ContactProps {}
+export interface ContactProps { }
 
 // function to validate email
 const validateEmail = (email: string) => {
@@ -57,7 +57,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         try {
             setIsLoading(true);
             const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
+                'http://localhost:8080/api/contact',
                 {
                     method: 'POST',
                     headers: {
@@ -74,9 +74,9 @@ const Contact: React.FC<ContactProps> = (props) => {
             // the response will be either {success: true} or {success: false, error: message}
             const data = (await res.json()) as
                 | {
-                      success: false;
-                      error: string;
-                  }
+                    success: false;
+                    error: string;
+                }
                 | { success: true };
             if (data.success) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
@@ -116,15 +116,11 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/yassine-chihi'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
-                    />
-                    <SocialBox
-                        icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        link={'https://linkedin.com/in/yassine-chihi'}
                     />
                 </div>
             </div>
@@ -138,8 +134,8 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:yassine.chihi20@gmail.com">
+                        yassine.chihi20@gmail.com
                     </a>
                 </p>
 

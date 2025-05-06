@@ -17,7 +17,7 @@ const About: React.FC<AboutProps> = (props) => {
             <div className="text-block">
                 <p>
                     I'm a software engineer and cyber-security enthusiast currently working at <i>INSTACODIN</i> ! 
-                    I earned my degree in Software Engineering from ISSATSo, affiliated with the University of Sousse, in October 2024.
+                    I earned my degree in Software Engineering from ISSATSo, which is part of the University of Sousse, in October 2024.
                 </p>
                 <br />
                 <p>
