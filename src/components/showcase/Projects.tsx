@@ -4,7 +4,7 @@ import VideoAsset from '../general/VideoAsset';
 // @ts-ignore
 import computer from '../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import saga from '../../assets/pictures/projects/software/saga.mp4';
+import soar from '../../assets/pictures/projects/software/soar.mp4';
 // @ts-ignore
 import scroll from '../../assets/pictures/projects/software/scroll.mp4';
 
@@ -38,7 +38,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
+                    <VideoAsset src={soar} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
