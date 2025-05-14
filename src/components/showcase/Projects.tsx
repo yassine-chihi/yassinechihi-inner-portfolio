@@ -39,12 +39,11 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={soar} />
-                    <div style={styles.caption}>
+                    <div style={{...styles.caption, ...styles.soar_demo}}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
+                                <b>Figure 2: </b> Unified SOC Platform
+                                demo showcasing the SOAR Platform's incident management interface.
                             </sub>
                         </p>
                     </div>
@@ -59,23 +58,10 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/scottbass47/gsts"
+                            href="https://github.com/yassine-chihi/SOC-PFE-Project"
                         >
                             <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Unity Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/gsts_assets"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Assets Repository
+                                <b>[GitHub]</b> - Unified SOC Platform Repository
                             </p>
                         </a>
                     </li>
@@ -270,7 +256,11 @@ const styles: StyleSheetCSS = {
     },
     caption: {
         width: '80%',
+        marginTop: '1rem'
     },
+    soar_demo: {
+        marginLeft: '15rem'
+    }
 };
 
 export default Projects;

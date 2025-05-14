@@ -41,6 +41,7 @@ const styles: StyleSheetCSS = {
     },
     video: {
         width: '100%',
+        marginTop: '1rem'
     },
     loadingBox: {
         backgroundColor: 'red',
