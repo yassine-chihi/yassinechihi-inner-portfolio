@@ -6,7 +6,7 @@ import computer from '../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
 import soar from '../../assets/pictures/projects/software/soar.mp4';
 // @ts-ignore
-import scroll from '../../assets/pictures/projects/software/scroll.mp4';
+import ecommerce from '../../assets/pictures/projects/software/Ecommerce.mp4';
 
 
 export interface ProjectsProps { }
@@ -39,10 +39,10 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 <br />
                 <div className="captioned-image">
                     <VideoAsset src={soar} />
-                    <div style={{...styles.caption, ...styles.soar_demo}}>
+                    <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> Unified SOC Platform
+                                <b>Figure 1: </b> Unified SOC Platform
                                 demo showcasing the SOAR Platform's incident management interface.
                             </sub>
                         </p>
@@ -67,44 +67,39 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     </li>
                 </ul>
                 <p>
-                    Unfortunately, the game currently is not in a releasable
-                    state and so there is no demo available online. If this ever
-                    changes, however, a link to the game will be added here.
+                    Unfortunately, the platform is currently not in a releasable
+                    state and so there is no demo available online.
                 </p>
             </div>
             <div className="text-block">
-                <h2>Skip the Scroll</h2>
+                <h2>AudioHeaven</h2>
                 <br />
                 <p>
-                    While working at Hover, I spent a lot of time on GitHub
-                    issue pages looking for answers and solutions to problems I
-                    had run into. I would always find myself sifting though the
-                    comments trying to find the right answer, which usually had
-                    the most upvotes and positive reactions. With that
-                    information, I decided to create a very simple chrome
-                    extension that would sift through all the comments on the
-                    page, sort them by positive reactions, and then allow you to
-                    traverse them from most positive reactions to least positive
-                    reactions.
+                    AudioHeaven is a modern e-commerce platform built with Next.js and Sanity CMS,
+                    offering a seamless shopping experience for audio equipment enthusiasts.
+                    The platform features a responsive design with dynamic product listings,
+                    real-time cart management, and secure payment processing through Stripe integration.
+                    Users can browse through a curated collection of high-quality audio products,
+                    from headphones to speakers, with detailed product descriptions and images.
+                    The application implements a clean, user-friendly interface with features like
+                    product filtering, search functionality, and a persistent shopping cart.
+                    Built with scalability in mind, AudioHeaven demonstrates modern web development
+                    practices and provides a solid foundation for an online audio equipment marketplace.
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={scroll} />
+                    <VideoAsset src={ecommerce} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
+                            <b>Figure 2:</b> AudioHeaven e-commerce platform demo showcasing the product browsing and shopping cart functionality.
                         </sub>
                     </p>
                 </div>
                 <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
+                    AudioHeaven is open source and available on GitHub. While it's a relatively straightforward
+                    e-commerce platform, it was an enjoyable project to build and explore modern web development
+                    practices. I wanted to showcase it since it demonstrates my ability to create full-stack
+                    applications with real-world features like payment processing and content management.
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -113,32 +108,19 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/skip-the-scroll"
+                            href="https://github.com/yassine-chihi/Ecommerce"
                         >
                             <p>
-                                <b>[GitHub]</b> - Skip the Scroll Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
-                        >
-                            <p>
-                                <b>[Chrome Web Store]</b> - Skip the Scroll
+                                <b>[GitHub]</b> - AudioHeaven Ecommerce
                             </p>
                         </a>
                     </li>
                 </ul>
                 <p>
-                    If you are a developer and have also found yourself
-                    scrolling through github comment after github comment saying
-                    "i also have this problem...", then I highly recommend you
-                    check out Skip the Scroll to save you some of your precious
-                    time. If you like it, feel free to star it on GitHub and
-                    rate it on the Chrome web store.
+                    If you're interested in exploring the codebase or want to learn more about 
+                    the implementation details, feel free to check out the GitHub repository. 
+                    The project demonstrates modern e-commerce practices and could serve as a 
+                    helpful reference for building similar applications.
                 </p>
             </div>
             <div className="text-block">
@@ -158,7 +140,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     <VideoAsset src={computer} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 1:</b> Blender Scene of the 3D website.
+                            <b>Figure 3:</b> Blender Scene of the 3D website.
                             The scene from Blender was baked and exported in a
                             GLTF format.
                         </sub>
