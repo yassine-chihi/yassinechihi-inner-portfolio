@@ -75,7 +75,7 @@ const About: React.FC<AboutProps> = (props) => {
                     software engineer, where I was able to apply my knowledge and skills in a real-world setting,
                     by building a real-time Security Orchestration, Automation, and Response (SOAR) platform.
                     You can check out the project on my  {' '}
-                    <Link to="/projects/software">Software Projects</Link> page.
+                    <Link to="/projects">Software Projects</Link> page.
                 </p>
                 <br />
                 <br />
@@ -93,12 +93,9 @@ const About: React.FC<AboutProps> = (props) => {
                         <p>
                             Beyond software, I have a lot of hobbies that I
                             enjoy doing in my free time. The most tangible
-                            hobbie I have is{' '}
-                            <Link to="/projects/ctfs">Playing CTFs</Link>{' '}.
-                            You can read more about it on it's respective
-                            page under my projects tab. Some other hobbies I
-                            enjoy are tennis, gym, cooking and (unsurprisingly)
-                            playing video games.
+                            hobbie I have is Playing CTFs.
+                            Some other hobbies I enjoy are tennis, gym,
+                            cooking and (unsurprisingly) playing video games.
                             
                         </p>
                         <br />
