@@ -33,7 +33,7 @@ const APPLICATIONS: {
     arcadeMachine: {
         key: 'arcadeMachine',
         name: 'Arcade Machine',
-        shortcutIcon: 'myComputer',
+        shortcutIcon: 'arcadeMachine',
         component: ArcadeMachine,
     },
     doom: {
