@@ -1,7 +1,7 @@
 import React from 'react';
 import ResumeDownload from './ResumeDownload';
 
-export interface ExperienceProps { }
+export interface ExperienceProps {}
 
 const Experience: React.FC<ExperienceProps> = (props) => {
     return (
@@ -14,7 +14,9 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://www.linkedin.com/company/instacodin/'}
+                            href={
+                                'https://www.linkedin.com/company/instacodin/'
+                            }
                         >
                             <h4>Instacodin</h4>
                         </a>
@@ -29,31 +31,40 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Contributed to building scalable, maintainable backend systems
-                    and DevOps infrastructure in a fast-paced startup environment focused
-                    on rapid feature delivery.
+                    Contributed to a dynamic startup by building and maintaining
+                    reliable backend APIs and IT infrastructure, emphasizing
+                    automation, deployment, and system stability.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Deployed and managed services on lightweight Kubernetes (K3s) clusters using
-                            Helm charts, leveraging Traefik for smart ingress and load balancing—resulting
-                            in smoother traffic handling and easier horizontal scaling.
+                            Managed Kubernetes and Docker infrastructures by
+                            monitoring container orchestration and performing
+                            system health checks to ensure high availability and
+                            minimal downtime.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented backend microservices using Node.js, NestJs,
-                            Postgres, and SurrealDB, delivering RESTful APIs and real-time communication,
-                            supporting growing productrequirements and reducing latency.
+                            Contributed to operational efficiency through CI/CD
+                            pipelines, automation scripts, and streamlined
+                            development workflows.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Boosted system stability and performance through in-depth debugging, code optimization,
-                            and comprehensive testing, while improving maintainability through collaborative code
-                            reviews and adherence to Agile workflows.
+                            Collaborated with teams to troubleshoot issues,
+                            improve performance, and uphold best practices for
+                            system reliability and security.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Designed and maintained backend microservices using
+                            NestJS, PostgreSQL, and SurrealDB, supporting API
+                            and real-time communication layers critical to
+                            business operations.
                         </p>
                     </li>
                 </ul>
@@ -80,28 +91,36 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Delivered secure, automated cybersecurity solutions that enhanced incident response efficiency
-                    and improved SOC operations for enterprise environments.
+                    Delivered secure, automated cybersecurity solutions that
+                    enhanced incident response efficiency and improved SOC
+                    operations for enterprise environments.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Developed a SOAR platform with Django, integrating CrowdStrike, Splunk, and Microsoft
-                            Sentinel to centralize alert triage and streamline case management across security teams.
+                            Developed a SOAR platform with Django, integrating
+                            CrowdStrike, Splunk, and Microsoft Sentinel to
+                            centralize alert triage and streamline case
+                            management across security teams.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Automated incident response workflows using the Shuffle API, reducing manual intervention
-                            and helping cut response times by 40% in internal testing environments.
+                            Automated incident response workflows using the
+                            Shuffle API, reducing manual intervention and
+                            helping cut response times by 40% in internal
+                            testing environments.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and deployed a containerized SOC solution using Docker Compose in VMware,
-                            integrating a robust SIEM stack (ELK, Wazuh, Nessus, Elastalert) and Threat Hunting tools
-                            (TheHive, Cortex, MISP), enabling efficient threat detection and forensic analysis.
+                            Designed and deployed a containerized SOC solution
+                            using Docker Compose in VMware, integrating a robust
+                            SIEM stack (ELK, Wazuh, Nessus, Elastalert) and
+                            Threat Hunting tools (TheHive, Cortex, MISP),
+                            enabling efficient threat detection and forensic
+                            analysis.
                         </p>
                     </li>
                 </ul>
@@ -128,28 +147,32 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Led technical initiatives to foster hands-on cybersecurity skills and community engagement
-                    within an academic setting.
+                    Led technical initiatives to foster hands-on cybersecurity
+                    skills and community engagement within an academic setting.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Directed a student team in organizing technical activities, mentoring peers, and building a
-                            strong cybersecurity culture within the club.
+                            Directed a student team in organizing technical
+                            activities, mentoring peers, and building a strong
+                            cybersecurity culture within the club.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and developed original CTF challenges across multiple domains, including Web
-                            Exploitation, Binary Exploitation (PWN), Reverse Engineering, Cryptography, and
-                            Miscellaneous.
+                            Designed and developed original CTF challenges
+                            across multiple domains, including Web Exploitation,
+                            Binary Exploitation (PWN), Reverse Engineering,
+                            Cryptography, and Miscellaneous.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Promoted cybersecurity awareness through on-campus events, workshops, and collaborative
-                            projects, increasing student participation and technical engagement.
+                            Promoted cybersecurity awareness through on-campus
+                            events, workshops, and collaborative projects,
+                            increasing student participation and technical
+                            engagement.
                         </p>
                     </li>
                 </ul>
