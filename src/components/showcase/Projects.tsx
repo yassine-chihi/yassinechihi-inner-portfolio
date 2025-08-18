@@ -14,8 +14,7 @@ export interface ProjectsProps { }
 const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
-            <h1>Software</h1>
-            <h3>Projects</h3>
+            <h1>Software Projects</h1>
             <br />
             <p>
                 Below are some of my favorite software projects I have worked on

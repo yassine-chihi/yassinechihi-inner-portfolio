@@ -40,9 +40,9 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     <li>
                         <p>
                             Managed Kubernetes and Docker infrastructures by
-                            monitoring container orchestration and performing
-                            system health checks to ensure high availability and
-                            minimal downtime.
+                            building and monitoring container orchestration and
+                            performing system health checks to ensure high
+                            availability and minimal downtime.
                         </p>
                     </li>
                     <li>
